@@ -4,7 +4,7 @@ echo "email: "
 
 read email
 
-mkdir ~/.ssh/keys
+mkdir -p ~/.ssh/keys
 
 ssh-keygen -t rsa -b 4096 -C "$email" -f ~/.ssh/keys/gitlab-rsa
 
